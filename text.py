@@ -13,7 +13,7 @@ from sklearn.model_selection import train_test_split
 
 
 
-data = pd.read_csv('data_clean', index_col=0)
+data = pd.read_csv('data_clean_text1.csv', index_col=0)
 y=data['court']
 X=data['judgment_text']
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.20, random_state=2)
